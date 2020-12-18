@@ -7,7 +7,8 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Roboto';
+    font-family: 'Anton';
+    letter-spacing: 0.75px;
 }
 
 /* from Bulma */
