@@ -42,7 +42,7 @@
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span class="small"><a href="{% url 'products' %}">Posters Home</a> | </span>
+                                <span class="small"><a href="{% url 'products' %}" class="cart-item">Posters Home</a> | </span>
                             {% endif %}
                             <!--Count the products, and display to the user the search keyword if there is one-->
                             {{ products|length }} Posters {% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}

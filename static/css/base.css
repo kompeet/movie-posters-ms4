@@ -103,6 +103,20 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.cart-item, .cart-item2{
+    color:#ffc107;
+}
+
+.cart-item:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.cart-item2:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
