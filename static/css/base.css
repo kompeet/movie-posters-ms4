@@ -8,7 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: #000;
     font-family: 'Anton';
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 /* from Bulma */
@@ -115,6 +115,36 @@ a.category-badge > span.badge:hover {
 .cart-item2:hover{
     color: #fff;
     text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+	line-height: 2.5rem;
+	position: relative;
+}
+
+.footer-container {
+    background-color: #000;
+    color: #fff;
+}
+
+.social-links li i {
+    color: #fff;
+    padding: 5px;
+    font-size: 1rem;
+    letter-spacing: 0.75rem;
+}
+
+.list-inline {
+    margin-bottom: 1px;
+}
+
+.footer-copyright p {
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 /* ------------------------------- bootstrap toasts */
