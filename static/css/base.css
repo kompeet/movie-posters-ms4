@@ -215,6 +215,14 @@ footer {
     overflow-y: auto;
 }
 
+/* Product images  https://stackoverflow.com/questions/37287153*/
+
+.card-img-top2 {
+width: 100%;
+height: 60vh;
+object-fit: cover;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -249,3 +257,4 @@ footer {
         height: calc(100vh - 116px);
     }
 }
+
