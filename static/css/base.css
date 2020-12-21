@@ -117,12 +117,14 @@ a.category-badge > span.badge:hover {
     text-decoration: none;
 }
 
+
 /* Footer */
 
-footer {
+footer{
     width: 100%;
 	line-height: 2.5rem;
-	position: relative;
+    position: relative;
+    margin: 0;
 }
 
 .footer-container {
@@ -130,22 +132,35 @@ footer {
     color: #fff;
 }
 
+.footer1 {
+    position: relative;
+    bottom: 0;
+    margin-top: 230px;
+}
+
 .social-links li i {
     color: #fff;
     padding: 5px;
-    font-size: 1rem;
-    letter-spacing: 0.75rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.65rem;
 }
 
 .list-inline {
-    margin-bottom: 1px;
+    margin-bottom: 3px;
+    margin-top: 5px;
 }
 
 .footer-copyright p {
     margin: 0;
     letter-spacing: 3px;
+    font-size: 1.3rem;
     text-transform: uppercase;
 }
+
+.footer-copyright {
+    margin-bottom: 5px;
+}
+
 
 /* ------------------------------- bootstrap toasts */
 
