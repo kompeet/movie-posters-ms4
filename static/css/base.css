@@ -152,9 +152,10 @@ footer{
 
 .footer-copyright p {
     margin: 0;
-    letter-spacing: 3px;
-    font-size: 1.3rem;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
     text-transform: uppercase;
+    letter-spacing: 1px;    
 }
 
 .footer-copyright {
