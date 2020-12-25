@@ -81,7 +81,7 @@
                                         {% include "bag/product-info.html" %}
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">£{{ item.product.price }}</p>
+                                        <p class="my-0">${{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
                                         {% include "bag/quantity-form.html" %}
@@ -93,7 +93,7 @@
                             {% endfor %}
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
-                                     {% include "bag/bag-total.html" %}
+                                    {% include "bag/bag-total.html" %}
                                 </td>
                             </tr>
                             <tr>
@@ -147,4 +147,4 @@
          });
     })
 </script>
-{% endblock %} 
+{% endblock %}
