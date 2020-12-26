@@ -9,6 +9,7 @@ body {
     color: #000;
     font-family: 'Anton';
     letter-spacing: 3px;
+    margin: 0;
 }
 
 /* from Bulma */
@@ -118,7 +119,6 @@ a.category-badge > span.badge:hover {
     text-decoration: none;
 }
 
-
 .list-inline-item a:hover,
 .list-inline-item a:focus,
 .list-inline-item a:active {
@@ -138,22 +138,14 @@ a.category-badge > span.badge:hover {
 
 /* Footer */
 
-footer{
+.footer{
     width: 100%;
 	line-height: 2.5rem;
     position: relative;
-    margin: 0;
-}
-
-.footer-container {
     background-color: #000;
     color: #fff;
-}
-
-.footer1 {
-    position: relative;
-    bottom: 0;
-    margin-top: 375px;
+    vertical-align: bottom;
+    margin-top: 400px;
 }
 
 .social-links li i {
