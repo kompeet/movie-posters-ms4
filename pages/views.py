@@ -3,7 +3,6 @@ from django.template.loader import get_template
 from django.core.mail import EmailMessage
 from django.contrib import messages
 
-from products.models import Product
 from .forms import ContactForm
 
 
