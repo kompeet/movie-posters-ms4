@@ -61,8 +61,8 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #f4ca34;
-    color: #000;
+    background: #f4ca34 !important;
+    color: #000 !important;
 }
 
 .text-black {
@@ -135,6 +135,23 @@ a.category-badge > span.badge:hover {
 .edit a {
     text-decoration: none;
     color: #f4ca34;
+}
+
+/* Contact Form */
+
+.main__wrapper {
+	padding: 19vh 15px 0;
+	min-height: 100vh
+}
+
+.card {
+	background: #fff;
+	margin-bottom: 3rem;
+	min-height: 60vh
+}
+
+.card-body {
+	padding: 1.5rem
 }
 
 /* Footer */
@@ -421,3 +438,52 @@ object-fit: cover;
 
 }
 
+/* Contact form */
+
+.card-header {
+    background-color: #000;
+}
+
+
+@media only screen and (min-width: 992px) {
+	
+.card {
+	background: #fff;
+	margin-bottom: 3rem;
+	min-height: 40vh
+}
+
+.card-body {
+	padding: 1.5rem
+}
+
+.main__wrapper {
+	padding: 17vh 15px 0;
+	min-height: 90vh
+}
+
+@media only screen and (min-width: 400px) {
+	.main__wrapper {
+		padding: 13vh 7vw 0
+	}
+}
+
+@media only screen and (min-width: 576px) {
+	.main__wrapper {
+		padding: 13vh 15vw 0
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.main__wrapper {
+		padding: 13vh 17vw 0
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.main__wrapper {
+		padding: 25vh 10vw 0
+	}
+}
+
+}
