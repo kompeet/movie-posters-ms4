@@ -140,7 +140,7 @@ a.category-badge > span.badge:hover {
 /* Contact Form */
 
 .main__wrapper {
-	padding: 19vh 15px 0;
+	padding: 23vh 15px 0;
 	min-height: 100vh
 }
 
@@ -447,43 +447,44 @@ object-fit: cover;
 
 @media only screen and (min-width: 992px) {
 	
-.card {
+    .card {
 	background: #fff;
 	margin-bottom: 3rem;
-	min-height: 40vh
-}
+	min-height: 40vh;
+    }
 
-.card-body {
+    .card-body {
 	padding: 1.5rem
-}
+    }
 
-.main__wrapper {
+    .main__wrapper {
 	padding: 17vh 15px 0;
-	min-height: 90vh
+	min-height: 90vh;
+    }
+
 }
 
 @media only screen and (min-width: 400px) {
 	.main__wrapper {
-		padding: 13vh 7vw 0
+		padding: 13vh 7vw 0;
 	}
 }
 
 @media only screen and (min-width: 576px) {
 	.main__wrapper {
-		padding: 13vh 15vw 0
+		padding: 13vh 15vw 0;
 	}
 }
 
 @media only screen and (min-width: 768px) {
 	.main__wrapper {
-		padding: 13vh 17vw 0
+		padding: 13vh 17vw 0;
 	}
 }
 
 @media only screen and (min-width: 992px) {
 	.main__wrapper {
-		padding: 25vh 10vw 0
+		padding: 25vh 10vw 0;
 	}
 }
 
-}
