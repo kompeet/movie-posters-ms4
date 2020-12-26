@@ -8,8 +8,8 @@ body {
     height: calc(100vh - 164px);
     color: #000;
     font-family: 'Anton';
-    letter-spacing: 3px;
-    margin: 0;
+    letter-spacing: 2px;
+    background-position-y: 80px;
 }
 
 /* from Bulma */
