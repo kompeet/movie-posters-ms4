@@ -1,6 +1,8 @@
 html {
     height: 100%;
 }
+    
+
 
 body {
     background: url('/media/homepage_background.jpg') no-repeat center center fixed;
@@ -10,7 +12,6 @@ body {
     font-family: 'Anton';
     letter-spacing: 2px;
     background-position-y: 80px;
-    position: relative;
 }
 
 /* from Bulma */
@@ -140,7 +141,7 @@ a.category-badge > span.badge:hover {
 /* Contact Form */
 
 .main__wrapper {
-	padding: 23vh 15px 0;
+	padding: 15vh 15px 0;
 	min-height: 100vh
 }
 
@@ -152,6 +153,10 @@ a.category-badge > span.badge:hover {
 
 .card-body {
 	padding: 1.5rem
+}
+
+.card-header {
+    background-color: #000;
 }
 
 /* Footer */
@@ -167,9 +172,8 @@ a.category-badge > span.badge:hover {
 }
 
 .footer1 {
-    position: relative;
     bottom: 0;
-    margin-top: 400px;
+    width: 100%;
 }
 
 .social-links li i {
@@ -440,10 +444,29 @@ object-fit: cover;
 
 /* Contact form */
 
-.card-header {
-    background-color: #000;
+@media only screen and (min-width: 400px) {
+	.main__wrapper {
+		padding: 13vh 7vw 0;
+	}
 }
 
+@media only screen and (min-width: 576px) {
+	.main__wrapper {
+		padding: 13vh 15vw 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+    .main__wrapper {
+		padding: 23vh 7vw 0;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.main__wrapper {
+		padding: 16vh 17vw 0;
+	}
+}
 
 @media only screen and (min-width: 992px) {
 	
@@ -458,33 +481,10 @@ object-fit: cover;
     }
 
     .main__wrapper {
-	padding: 17vh 15px 0;
+	padding: 24vh 15px 0;
 	min-height: 90vh;
     }
 
 }
 
-@media only screen and (min-width: 400px) {
-	.main__wrapper {
-		padding: 13vh 7vw 0;
-	}
-}
-
-@media only screen and (min-width: 576px) {
-	.main__wrapper {
-		padding: 13vh 15vw 0;
-	}
-}
-
-@media only screen and (min-width: 768px) {
-	.main__wrapper {
-		padding: 13vh 17vw 0;
-	}
-}
-
-@media only screen and (min-width: 992px) {
-	.main__wrapper {
-		padding: 25vh 10vw 0;
-	}
-}
 
