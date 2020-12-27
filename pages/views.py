@@ -25,7 +25,7 @@ def contact(request):
             email = EmailMessage(
                 "Contact Form",
                 email_content,
-                to=["contact@movieposters.com"],
+                to=["movieposters66@gmail.com"],
                 headers={"Reply-to": reply_email},
             )
             try:
