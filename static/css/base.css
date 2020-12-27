@@ -465,7 +465,7 @@ object-fit: cover;
 
 @media only screen and (min-width: 768px) {
 	.main__wrapper {
-		padding: 16vh 17vw 0;
+		padding: 13vh 17vw 0;
 	}
 }
 
@@ -482,7 +482,7 @@ object-fit: cover;
     }
 
     .main__wrapper {
-	padding: 24vh 15px 0;
+	padding: 23vh 250px;
 	min-height: 90vh;
     }
 
