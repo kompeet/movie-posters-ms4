@@ -2,11 +2,13 @@ from django.db import models
 
 # Create your models here.
 # Base of the models from the Boutique Ado project
-# Metaclass provided to fix the spelling, declare that the plural version of Category is not Categorys 
+# Metaclass provided to fix the spelling, 
+# declare that the plural version of Category is not Categorys 
 
 
 # Categories with a name and a friendly name for frontend
-# Both of them have max lenght, the friendly name it's not required (because blank=True)
+# Both of them have max lenght, the friendly name it's
+#  not required (because blank=True)
 
 class Category(models.Model):
 
@@ -25,8 +27,10 @@ class Category(models.Model):
 # Product model with key elements
 # Category, sku, image url and image fields are optional
 
+
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category', null=True, blank=True,
+                                 on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
