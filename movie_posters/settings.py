@@ -14,7 +14,7 @@ import os
 import dj_database_url
 
 from os import path
-if path.exists('env.py'):
+if path.exists("env.py"):
     import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -134,7 +134,7 @@ WSGI_APPLICATION = 'movie_posters.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL', ''))
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 DATABASES = {
     'default': {
@@ -142,7 +142,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 
 # Password validation
