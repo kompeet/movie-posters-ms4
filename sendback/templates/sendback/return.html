@@ -5,19 +5,19 @@
 <main class="container-fliud main__wrapper">
 	<div class="card">
 		<div class="card-header">
-			<h3 class="display-6 logo-font text-white text-uppercase">TEST</h3>
+			<h3 class="display-6 logo-font text-white text-uppercase">Return a product</h3>
 		</div>
 		<div class="card-body">
 			<div class="row">
 				<div class="col-12 col-lg-8 offset-lg-2">
 					<p class="display-6 logo-font text-black">
-                     TEST TEST
+                     Please provide some information, why would you like to return the product.
 					</p>
 					<form method="POST">
-						{% csrf_token %} {{ sendback_form|crispy }}
+                        {% csrf_token %} {{ sendback_form|crispy }}
 						<button class="btn btn-black rounded-0 text-uppercase mt-5 float-right" type="submit">
 							Submit
-						</button>
+                        </button>
 					</form>
 				</div>
 			</div>
@@ -25,3 +25,5 @@
 	</div>
 </main>
 {% endblock content %}
+
+
