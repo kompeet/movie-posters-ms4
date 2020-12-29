@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
-    
+    'sendback'
 
 
     # Other
