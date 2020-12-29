@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
-    'kompeet-movie-posters.herokuapp.com',
+    'k0mpeet-movie-posters.herokuapp.com',
     'localhost', 
     '127.0.0.1',
 ]
