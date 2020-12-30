@@ -4,4 +4,9 @@ from .models import SendBack
 
 @admin.register(SendBack)
 class SendBackAdmin(admin.ModelAdmin):
-    search_fields = ('name', 'email', 'reason', 'order_number')
+    list_display = (
+        'name',
+        'reason',
+        'email',
+        'order_number',
+    )
