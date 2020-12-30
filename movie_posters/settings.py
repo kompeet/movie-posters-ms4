@@ -35,7 +35,7 @@ else:
 
 ALLOWED_HOSTS = [
     'k0mpeet-movie-posters.herokuapp.com',
-    'localhost', 
+    'localhost',
     '127.0.0.1',
 ]
 
@@ -93,7 +93,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',  # allows django to access the HTTP request object in the template
+                'django.template.context_processors.request',  # allows django to access the HTTP request object
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
