@@ -1,50 +1,91 @@
-{% extends "base.html" %}
-{% load static %} 
-{% block extracss %}
-<link rel="stylesheet" href="{% static 'css/base.css' %}" />
-{% endblock %} 
-
-{% block content %} 
+{% extends "base.html" %} {% load static %} {% block content %}
 <!-- Jumbotron -->
-<div class="jumbotron-container blog-jumbotron-section">
+<div class="jumbotron-container blog-jumbotron-section" style="margin-top: 100px;">
   <div class="row">
     <div class="col-12">
-      <div class="jumbotron product-jumbotron-content text-center">
-        <h1 class="display-4">BLOG</h1>
+      <div class="jumbotron blog-jumbotron-content text-white text-center" style="background-color: black;">
+        <h1 class="display-4">Blog</h1>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Blog Intro Text -->
+
 <div class="container">
-  <div class="row blog-text-row">
-    <div class="col-12">
-      <p>
-        Become a collector<br>
-        If you have a passion for a film, an actor, actress, director, or graphic arist, you can savor the passion by having the original movie poster on your wall.
-      </p>
+  <div class="row">
+    <!-- Blog Entries Column -->
+    <div class="col-md-8 offset-md-2 mt-3">
+      {% for post in post_list %}
+      <div class="card mb-4">
+        <div class="card-body mt-2 mb-2">
+        <a href="{% url 'post_detail' post.slug  %}">
+          {% if post.image %}
+          <img
+            class="card-img-top mb-3"
+            src="{{ post.image.url }}"
+            alt="{{ post.title }}"
+          />
+          {% else %}
+          <img
+            class="card-img-top mb-3"
+            src="{{ MEDIA_URL }}noimage.png"
+            alt="{{ post.title }}"
+          />
+          {% endif %}
+        </a>
+        <a href="{% url 'post_detail' post.slug  %}">
+          <h2 class="display-6 logo-font text-warning text-uppercase">{{ post.title }}</h2>
+        </a>
+        <p class="card-text text-muted h6">
+            {{ post.author }} | {{ post.created_on}}
+        </p>
+        <p class="card-text">{{ post.content|safe|slice:":100" }}...
+        </p>
+        <a href="{% url 'post_detail' post.slug  %}" class="btn btn-black">Read More
+        </a>
+        </div>
+      </div>
+      {% endfor %}
     </div>
   </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <!-- Blog Entries Column -->
-        <div class="col-md-8 mt-3 left">
-            {% for post in post_list %}
-            <div class="card mb-4">
-                <div class="card-body mt-2 mb-2">
-                    <img class="card-img-top mb-3" src="{{ post.image.url }}"/>
-                    <h2 class="card-title">{{ post.title }}</h2>
-                    <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                    <p class="card-text">{{ post.content|safe|slice:":200" }}...</p>
-                    <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More</a>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
+<!-- Pagination -->
+<div>
+  {% if post_list.has_other_pages %}
+  <nav aria-label="Page navigation conatiner">
+    <ul class="pagination justify-content-center">
+      {% if post_list.has_previous %}
+      <li>
+        <a href="?page={{ post_list.previous_page_number }}" class="page-black btn-secondary"
+          >&laquo; Previous Page
+        </a>
+      </li>
+      {% endif %} {% if post_list.has_next %}
+      <li>
+        <a href="?page={{ post_list.next_page_number }}" class="page-black btn-secondary">
+          Next page &raquo;</a
+        >
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+</div>
+{% endif %}
+
+<!-- Back to top button -->
+<div class="btt-button shadow-sm rounded-0 border border-black">
+  <a class="btt-link d-flex h-100">
+    <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+  </a>
 </div>
 
+{% endblock %} {% block postloadjs %}
+<!-- Back to top button script -->
+{{ block.super }}
+<script>
+  $(".btt-link").click(function (e) {
+    window.scrollTo(0, 0);
+  });
+</script>
 {% endblock %}

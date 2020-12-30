@@ -29,6 +29,8 @@ This is a full stack website developed for Code Institute milestone project 4. I
 - [**Profiles App**](#Profiles-App)
 - [**Products App**](#Products-App)
 - [**Checkout App**](#Checkout-App)
+- [**Sendback App**](#Sendback-App)
+- [**Blog App**](#Blog-App)
 4. [**Features**](#Features)
 - [**Implemented Features**](#Implemented-Features)
 - [**Planned Features**](#Planned-Features)
