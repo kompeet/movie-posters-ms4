@@ -214,18 +214,14 @@ input[name='q']::placeholder {
 
 /* Blog */
 
-.jumbotron-container .blog-jumbotron-section {
-    margin-top: 150px;
-}
-
 .blog-jumbotron-content {
     padding-top: 20vh;
 }
 
 .post-card-body {
+    margin-top: 50px;
     margin-bottom: 25px;
 }
-
 
 .card-body {
     margin-bottom: 50px;
