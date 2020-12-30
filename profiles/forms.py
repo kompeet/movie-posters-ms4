@@ -34,3 +34,4 @@ class UserProfileForm(forms.ModelForm):
                                                         'rounded-0 '
                                                         'profile-form-input')
             self.fields[field].label = False
+
