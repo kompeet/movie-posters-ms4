@@ -2,8 +2,8 @@ from django.db import models
 
 # Create your models here.
 # Base of the models from the Boutique Ado project
-# Metaclass provided to fix the spelling, 
-# declare that the plural version of Category is not Categorys 
+# Metaclass provided to fix the spelling
+# declare that the plural version of Category is not Category 
 
 
 # Categories with a name and a friendly name for frontend
@@ -14,7 +14,7 @@ class Category(models.Model):
 
     class Meta:
         verbose_name_plural = 'Categories'
-        
+
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
