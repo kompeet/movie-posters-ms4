@@ -57,7 +57,7 @@ To offer users original porsters for purchasing. Users will be able to browse pr
 
 ### User Stories
 
-- Users (new)
+#### Users (new)
 
 New visitors to the website should be provided with the answers they need right away.
 
@@ -66,7 +66,7 @@ New visitors to the website should be provided with the answers they need right 
  - I want to be able to easily register for an account so that I can see and save my personal details for quicker ordering in the future
  - I want to be able to read the blogs and make comments
 
-- Users (registered)
+#### Users (registered)
 
 Registered users of the website will be provided with additional features which non-registered users will not benefit from.
 
@@ -75,7 +75,7 @@ Registered users of the website will be provided with additional features which 
  - As a registered user, I want to be able to view my past orders so that I can keep track of my orders with the site
  - As a registered user, I want to be able to have my delivery details prefilled so that I can save time in entering my details
 
-- Users (website shoppper)
+#### Users (website shoppper)
 
 All shoppers of the website, new, returning or registered:
 
@@ -92,7 +92,7 @@ All shoppers of the website, new, returning or registered:
  - As a shopper, I want to be able to contact the website owner so that I can ask them a question
  - As a shopper, I want to ba able to return my product
 
-- Users (site owner)
+#### Users (site owner)
 
  - As the site owner, I want to be able to easily list my products to sell so that I can sell new products to my users
  - As the site owner, I want to be able to update my product listings so that I can make sure the information is correct or amendments can be made
