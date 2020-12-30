@@ -28,7 +28,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+if os.environ.get("DEVELOPMENT"):
+    development = True
+else:
+    development = False
 
 ALLOWED_HOSTS = [
     'k0mpeet-movie-posters.herokuapp.com',
