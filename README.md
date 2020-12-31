@@ -488,4 +488,137 @@ Few of my friends and my family have tested the website by using it and did not 
 
 ## Development & Deployment
 
+### Heroku Deployment
+
+1. On the [Heroku](https://www.heroku.com/) website, create an account or login
+2. Create a new app from your dashboard by clicking **New** and then **Create new app**
+3. Enter a name, select a region and then click **Create app**
+4. On the app page, click on **Resources**
+5. In the add-ons section of the page, type `postgres` and select Heroku Postgres
+6. Select the **Hobby Dev — Free** option from the dropdown and click **Provision**
+7. Navigate to the **Settings** page, click on **Reveal Config Vars** in the Convig Vars section
+8. Set the following Config Vars
+
+    | Key | Value |
+    --- | ---
+    `DEVELOPMENT` | `1`
+    `STRIPE_PUBLIC_KEY` | `your key`
+    `STRIPE_SECRET_KEY` | `your key`
+    `STRIPE_WEBHOOK_SECRET` | `your key`
+    `STRIPE_CURRENCY` | `payment currency`
+    `SECRET_KEY` | `your key`
+    `EMAIL_HOST` | `your email host server`
+    `EMAIL_PASSWORD` | `your email/app password`
+    `EMAIL_HOST_USER` | `your email address`
+    `EMAIL_PORT` | `your email host port`
+
+9. From this screen, copy the value of DATABASE_URL
+10. Add a new entry to the settings.json `"terminal.integrated.env.windows"` setting
+
+    ```json
+    "DATABASE_URL": "<Value copied from Heroku>"
+    ```
+    
+11. Migrate the models to the database with this command
+
+    `python manage.py migrate`
+
+12. Load the data into the database with this command
+
+    `python manage.py loaddata categories.json`
+    `python manage.py loaddata products.json`
+
+13. Create a superuser with this command
+
+    `python manage.py createsuperuser`
+
+14. In the project settings.py add your heroku app url to the allowed hosts setting
+
+    `ALLOWED_HOSTS = ["YOUR_URL"]`
+
+15. Before proceeding further you must create a new repo on github by following these steps
+    * On the [GitHub](https://github.com/) website, sign in or create an account
+    * Click on the *green* **New** button and give your repo a name, then click **Create repository**
+    * From the **Quick setup** section copy the github url to your repo
+    * In the terminal in your IDE, make sure you are in the project folder, change the remote and push with these commands
+
+    `git remote set-url origin YOUR_REPO_URL`
+
+    `git push`
+
+16. In Heroku, click on **Deploy** in the navigation bar
+17. In the **Deployment** section, select **GitHub** as the deployment method
+18. Search for your repository and click **Connect**
+19. Click Deploy Branch
+    * Optionally enable automatic deploys to deploy every time a the repository is updated
+20. Click on **Activity** tab to see the build log
+21. When build has succeeded, click on **Open App** to view the deployed site
+
+### Local Deployment
+
+In order to run this project locally on your own system, you will need the followings:
+
+- an IDE like GitPod or VS Code;
+- Python3;
+- PIP;
+- GIT.
+
+If you have these things up and running, then the next steps are:
+
+1. Clone this GitHub repository by clicking the green "Clone or download" button above in order to download the project as a zip-file. Download it, and unzip it.
+
+2. Create a .env file with your own credentials.
+
+3. Create a requirements.txt file, then free requirements with this command:
+`pip freeze > requirements.txt`
+
+4. To launch your project on an IDEA, type this in your terminal:
+
+`python manage.py runserver`
+
+5. After exposing the port, you should see the local server running.
+
+6. In order to access the Django Admin Panel, you must generate a superuser:
+`python manage.py createsuperuser` then assign an admin username, email, and secure password.
+
+7. Now you can login as a superuser on Django Admin. Add `/admin` to the end of the local port address, and login.
+
+## Credits
+
+* This project was developed following Chris Zielinski and the Boutique Ado project code provided by [Code Institute](https://codeinstitute.net/), but was customized and expanded by me.
+* The base of the code for back to top button [W3Schools](https://www.w3schools.com/).
+* Blog Implementation Tutorial provided and Extending The Application such as Adding Comments System and Adding Pagination [DJANGO CENTRAL](https://djangocentral.com/building-a-blog-application-with-django/)
+* During development I constantly referred to and used code from [Django](https://docs.djangoproject.com/en/3.1/) and [Stripe](https://stripe.com/docs) documentation
+
+### Image & Content Credits
+
+* [movieposters](https://www.movieposters.com/) 
+
+## Acknowledgements
+
+Thanks to [Chris Zielinski](https://github.com/ckz8780) for being very active on slack and answering questions and personal messages, as well as the amazing Boutique Ado mini project.
+
+Thanks to My mentor, [Aaron Sinnott](https://github.com/aaronsnig501) for his advices.
+
+Thanks to Code Institute Tutor Team, they helped a lot during this project. 
+
+**Johann Albert** when I lost it you brought me back. Thank you!
+
+## Disclaimer
+
+This site is part of a course project and is intended for educational purposes only.
+
+
+Peter Komaromi
+
+Code Institute
+
+2020
+
+
+
+
+
+
+
 
