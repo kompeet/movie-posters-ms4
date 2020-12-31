@@ -476,7 +476,9 @@ Few of my friends and my family have tested the website by using it and did not 
   - There are no errors through the PEP8 check. However, there are a couple of highlighted rows of code where I have decided not to make the suggested corrections:
 
   ‘Avoid using null=True on string based fields.’ Pages with error
+
   ’Line too long’ Pages with error. 
+
    Imported but unused in some tests.pys
 
 
@@ -484,7 +486,8 @@ Few of my friends and my family have tested the website by using it and did not 
 
 - There was a bug in my code where if the user typed in the quantity they could add as many as they like which is shown in the screenshot below. I fixed this issue by changing the quantity to a range between 1 and 999. This means that the user can physically type in anything from 1 to 999 when they update it in the cart. But if they type in 1000 or above then the item will be removed from the cart. This will also shop the site from crashing as they can only have a certain amount in the quantity.
 
-- There is still an isteresting bug in the shopping bag only on large resolution quantity goes below 0 and above 5. On smaller(mobile) resolution this issue does not exist anymore, quantity pushed between 1 and 5. JS was checked. It looks like if it came from css.
+- There is still an isteresting bug. If to put a product into the shopping bag only on large resolution quantity goes below 0 and above 5. On smaller(mobile) resolution this issue does not exist anymore, quantity pushed between 1 and 5. JS was checked. It looks as if it came from css. It took me a while to try to solve this, and asked tutor support. They did not know either. 
+
 
 ## Development & Deployment
 
@@ -526,6 +529,7 @@ Few of my friends and my family have tested the website by using it and did not 
 12. Load the data into the database with this command
 
     `python manage.py loaddata categories.json`
+
     `python manage.py loaddata products.json`
 
 13. Create a superuser with this command
