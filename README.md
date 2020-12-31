@@ -369,3 +369,123 @@ Active|active|BooleanField|default=False
 - [AWS Amazon](https://aws.amazon.com/)
 
 ## Testing & Bugs
+
+#### Homepage
+
+* On the Homepage, you can see a navbar that is consistent on each page. It contains a menu and a User Menu with authentication and shopping bag. The navbar is collapsable on mobile devices and a search bar.
+
+* Under the navbar, there is a responsive image.
+
+* On the Homepage, you can find a small introduction to tell the user a little bit about the scope of the page and a shop button which leads to the all products page.
+
+* The footer is another returning component on the page. The footer contains five FontAwesome icons leading to my GitHub page, Instagram, Facebook, Twitter and the return product red icon. All links are working, links load in a new tab and leads to the sendback form.
+
+#### Product Page
+
+* When the user wants to see Products, they can choose between browsing by categories or loading all products.
+
+* If the user chooses to load product categories, they can see a badge telling which category is loaded.
+
+* I used count() to let the user know how many products they can find on that page.
+
+* I built Django Pagination to split the page and make it easier to navigate on.
+
+* Besides sorting by categories, there is a SortBy function loading the products sorting them by the price or the name.
+
+* On Detailed Product Page, there is a Bootstrap carousel to show the product images.
+
+* Product details are visible for anyone, Edit and Delete buttons are available only for SuperUsers. Edit and delete functions works without a problem.
+
+* The quantity is adjusable between 1-5 for limited reasons.
+
+* When the user adds a product to their bag, a Bootstrap toast pops up to display a success message. These bootstrap messages appear after every operation. I used toast to display success, error, info, and warning.
+
+#### Genre & Decades
+
+* 10 each categoies lead to specific products.
+
+#### Contact Page
+
+* Users can submit a contact form to ask questions. Should be available to unregistered users.
+
+#### Bag
+
+* The default status of the bag is empty. When a user adds an item to it, they can see the product details, the bag total, the delivery cost, and the grand total, and change quantity. If they hit on Secure Checkout, a form appears where the user has to provide some information regarding the delivery and the payment. All fields are required to be filled out. After the checkout, they get redirected to a success page which contains an order summary and a button back to all product pages. The user gets a confirmation email. The whole checkout process was tested from different devices. Everything worked well. After the checkout, the admin can see the order in Django Admin and Stripe dashboard as well.
+
+#### Authentication
+
+* Authentication is provided by using Django Allauth. The user can sign up by setting a username, a password, and a valid email address. After clicking on Sign Up, they receive an email with a link to activate the profile. By clicking on the link, the user created a profile, so they can log in. Signed in users have a profile with delivery information (if they choosed to save it), and an order history with details about the product, and an order status. The order status has two mode: Processed and Awaiting, telling the user if their order is already seen by the shop owner. The status of the order can be changed in Django Admin.
+
+* SuperUser can click on Product Managment page where they can add new products. This page is only available for the shop owner. The whole sign up, sign in, sign out process was tested, everything worked well.
+
+#### Blog
+
+* Blog button leads to a full page of blog articles.
+
+
+#### Manual Testing
+
+I manually tested the entire website across 3 desktop browsers (Chrome, Safari and Firefox) on tablet on 2 browsers (Chrome and Safari).
+
+Tested devices:
+
+- [x] laptop(width 1440px)
+
+- [x] Moto G4
+
+- [x] Galaxy S5
+
+- [x] Pixel2, Pixel 2XL
+
+- [x] Iphone 5/SE, Iphone 6/7/8
+
+- [x] Iphone 6/7/8 Plus, IphoneX
+
+- [x] Ipad and Ipad Pro
+
+- [x] Xiaomi Redmi 4A
+
+- [x] Xiaomi Redmi Note5
+
+- [x] Xperia z5 Compact
+
+
+#### User tests
+
+Few of my friends and my family have tested the website by using it and did not report any bugs. The feedback was positive.
+
+
+#### W3C HTML Validator
+
+- [HTMLValidation](https://validator.w3.org/):
+
+  - Unfortunately the HTML validator doesn't understand the Django templating syntax, so I got a bunch of errors because of this. Also you can find some errors caused by using base.html as a shell. No other error found.
+
+- [CSSValidation](https://jigsaw.w3.org/css-validator/):
+
+  - Bootstrap errors did occur, which I was advised to ignore.
+
+  - All of my code otherwise passes without any errors.
+
+- [JavaScript Validation](https://esprima.org/demo/validate.html):
+
+  - No error found, code is syntactically valid.
+
+- [PythonCodeChecker](https://extendsclass.com/python-tester.html):
+
+  - There are no errors through the PEP8 check. However, there are a couple of highlighted rows of code where I have decided not to make the suggested corrections:
+
+  ‘Avoid using null=True on string based fields.’ Pages with error
+  ’Line too long’ Pages with error. 
+   Imported but unused in some tests.pys
+
+
+### Bugs
+
+- There was a bug in my code where if the user typed in the quantity they could add as many as they like which is shown in the screenshot below. I fixed this issue by changing the quantity to a range between 1 and 999. This means that the user can physically type in anything from 1 to 999 when they update it in the cart. But if they type in 1000 or above then the item will be removed from the cart. This will also shop the site from crashing as they can only have a certain amount in the quantity.
+
+- There is still an isteresting bug in the shopping bag only on large resolution quantity goes below 0 and above 5. On smaller(mobile) resolution this issue does not exist anymore, quantity pushed between 1 and 5. JS was checked. It looks like if it came from css.
+
+## Development & Deployment
+
+
