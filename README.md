@@ -10,6 +10,10 @@ This is a full stack website developed for Code Institute milestone project 4. I
 
 ---
 
+![AmIresponsive](https://github.com/kompeet/movie-posters-ms4/blob/master/media/AmIResponsive.JPG "Responsive")
+
+---
+
 ## Contents
 
 1. [**UX**](#Ux)
