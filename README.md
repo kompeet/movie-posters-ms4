@@ -156,4 +156,115 @@ The implementation ended up slightly different.
 
 ## Data Models
 
+In order to map the relationships between the models in this project I created an entity relationship diagram. This can be viewed [here](https://github.com/kompeet/movie-posters-ms4/blob/master/static/images/datamodels.JPG).
 
+* Profiles App
+
+#### User Profile Model
+
+Name|Key in db|Field Type|Arguments
+:-----:|:-----:|:-----:|:-----:
+User|user|OneToOneField|django.contrib.auth.get_user_model(), on_delete.models.CASCADE
+Phone Number|default_phone_number|CharField|max_length=20, null=True, blank=True
+Street 1|default_street_address_1|CharField|max_length=80, null=True, blank=True
+Street 2|default_street_address_2|CharField|max_length=80, null=True, blank=True
+City|default_town_or_city|CharField|max_length=40, null=True, blank=True
+County|default_county|CharField|max_length=80, null=True, blank=True
+Postcode|default_postcode|CharField|max_length=20, null=True, blank=True
+Country|default_country|CountryField|blank_label='Country', null=True, blank=True
+
+* Products App
+
+#### Category Model
+
+Name|Key in db|Field Type|Arguments
+:-----:|:-----:|:-----:|:-----:
+Name|name|CharField|max_length=254
+Friendly Name|friendly_name|CharField|max_length=254, null=True, blank=True
+
+#### Product Model
+
+Name|Key in db|Field Type|Arguments
+:-----:|:-----:|:-----:|:-----:
+Category|category|ForeignKey|'Category', null=True, blank=True, on_delete=models.SET_NULL
+SKU|sku|CharField|max_length=254, null=True, blank=True
+Name|name|CharField|max_length=254
+Description|description|TextField|
+Year|year|IntegerField|default=2020
+Size|has_sizes|BooleanField|default=True, null=True, blank=True
+Price|price|DecimalField|max_digits=7, decimal_places=2
+Image URL|image_url|URLField|max_length=1024, null=True, blank=True
+Image|image|ImageField|null=True, blank=True
+
+* Checkout App
+
+#### Order Model
+
+Name|Key in db|Field Type|Arguments
+:-----:|:-----:|:-----:|:-----:
+Order Number|order_number|CharField|max_length=32, null=False, editable=False
+Related User|user_profile|ForeignKey|UserProfile, on_delete=models.SET_NULL, null=False, blank=False, related_name='orders'
+Full Name|full_name|CharField|max_length=100, null=False, blank=False
+Email|email|EmailField|max_length=254, null=False, blank=False
+Phone Number|phone_number|CharField|max_length=20, null=True, blank=True
+Country|country|CountryField|blank_label='Country', null=True, blank=True
+Postcode|postcode|CharField|max_length=20, null=True, blank=True
+City|city|CharField|max_length=50, null=True, blank=True
+Street 1|street_address_1|CharField|max_length=100, null=True, blank=True
+Street 2|street_address_2|CharField|max_length=100, null=True, blank=True
+County|county|CharField|max_length=20, null=True, blank=True
+Date|date|DateTimeField|auto_now_add=True
+Order Total|order_total|DecimalField|max_digits=10, decimal_places=2, null=False, default=0
+Grand Total|grand_total|DecimalField|max_digits=10, decimal_places=2, null=False, default=0
+Original|original_bag|TextField|null=False, blank=False, default=''
+Stripe|stripe_pid|CharField|max_length=254, null=False, blank=False, default=''
+
+#### Order Line Item Model
+
+Name|Key in db|Field Type|Arguments
+:-----:|:-----:|:-----:|:-----:
+Oder|order|ForeignKey|Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems'
+Product|product|ForeignKey|Product, null=False, blank=False, on_delete=models.CASCADE
+Product Size|product_size|CharField|max_length=8, null=True, blank=True
+Quantity|quantity|IntegerField|null=False, blank=False, default=0
+Line Item T|lineitem_total|DecimalField|max_digits=6, decimal_places=2, null=False, blank=False, editable=False
+
+* Sendback App
+
+#### Send Back Model
+
+Name|Key in db|Field Type|Arguments
+:-----:|:-----:|:-----:|:-----:
+Name|name|CharField|max_length=80, blank=False
+Email|email|EmailField|blank=False
+Reason|reason|TextField|blank=False
+Order Number|order_number|CharField|max_length=80, blank=False
+
+* Blog App
+
+#### Post Model
+
+Name|Key in db|Field Type|Arguments
+:-----:|:-----:|:-----:|:-----:
+Title|title|CharField|max_length=200, unique=True
+Slug|slug|SlugField|max_length=200, unique=True
+Author|author|ForeignKey|User, on_delete=models.CASCADE,related_name='blog_posts'
+Updated|updated_on|DateTimeField|auto_now=True
+Content|content|TextField|
+Created|created_on|DateTimeField|auto_now_add=True
+Status|status|IntegerField|choices=STATUS, default=0
+Image URL|image_url|URLField|max_length=1024, null=True, blank=True
+Image|image|ImageField|null=True, blank=True
+
+#### Comment Model
+
+Name|Key in db|Field Type|Arguments
+:-----:|:-----:|:-----:|:-----:
+Post|post|ForeignKey|Post,on_delete=models.CASCADE,related_name='comments'
+Name|name|CharField|max_length=80
+Email|email|EmailField|
+Body|body|TextField|
+Created|created_on|DateTimeField|auto_now_add=True
+Active|active|BooleanField|default=False
+
+## Features
