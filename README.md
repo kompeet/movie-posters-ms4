@@ -10,7 +10,7 @@ This is a full stack website developed for Code Institute milestone project 4. I
 
 ---
 
-![AmIresponsive](https://github.com/kompeet/movie-posters-ms4/blob/static/images/AmIResponsive.JPG "Responsive")
+![AmIresponsive](https://github.com/kompeet/movie-posters-ms4/blob/master/static/images/AmIResponsive.JPG "Responsive")
 
 ---
 
@@ -125,12 +125,12 @@ All shoppers of the website, new, returning or registered:
 
 ### Colours
 
-Two of the most important colors are black and white. To make the site consistent and easy to read, I used these two colors for almost everything and also chose two more lighter colours for the bottoms and icons hover.
+Two of the most important colors are black and white. To make the site consistent and easy to read, I used these two colors for almost everything and also chose three more lighter colours for the bottoms and icons hover.
 These colours balace well and make the site easy to read and use.
 
 I used the basic Bootstrap colours for message alerts.
 
-![ColourPalette](https://github.com/kompeet/movie-posters-ms4/blob/static/images/colour.JPG "Colour")
+![ColourPalette](https://github.com/kompeet/movie-posters-ms4/blob/master/static/images/colour.JPG "Colour")
 
 ### Fonts
 
