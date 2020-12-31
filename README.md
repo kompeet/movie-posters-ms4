@@ -10,7 +10,7 @@ This is a full stack website developed for Code Institute milestone project 4. I
 
 ---
 
-![AmIresponsive](https://github.com/kompeet/movie-posters-ms4/blob/master/media/AmIResponsive.JPG "Responsive")
+![AmIresponsive](https://github.com/kompeet/movie-posters-ms4/blob/static/images/AmIResponsive.JPG "Responsive")
 
 ---
 
@@ -123,5 +123,37 @@ All shoppers of the website, new, returning or registered:
 
 ## Design Choices
 
+### Colours
+
+Two of the most important colors are black and white. To make the site consistent and easy to read, I used these two colors for almost everything and also chose two more lighter colours for the bottoms and icons hover.
+These colours balace well and make the site easy to read and use.
+
+I used the basic Bootstrap colours for message alerts.
+
+![ColourPalette](https://github.com/kompeet/movie-posters-ms4/blob/static/images/colour.JPG "Colour")
+
+### Fonts
+
+The font I selected for this page is [Anton](https://fonts.google.com/specimen/Anton?query=anton) from GoogleFonts, because it fits perfectly with the elegant, bohemian and represents the movie, film world.
+
+### Icons
+
+I have used a range of font awesome icons across the website to aid in displaying content and navigation options instead of using only text.
+
+### Styles
+
+I have chosen to use vw/vh on padding and margins in a lot of cases as I believe this allows for an even more responsive experience than using solely rem.
+
+### Images
+
+The images are taken from the internet and credited in the credits section of the readme.
+
+### Wireframes
+
+I made wireframes for each page of the site from three different types of devices. I used the Balsamiq. The wireframes can be viewed [here](https://github.com/kompeet/movie-posters-ms4/tree/master/wireframes).
+
+The implementation ended up slightly different.
+
+## Data Models
 
 
