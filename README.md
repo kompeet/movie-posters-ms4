@@ -55,9 +55,9 @@ To offer users original porsters for purchasing. Users will be able to browse pr
 
 ### Site Owner Goals
 
-- Sell products to customers
-- Add, remove and update products
-- Update the website with blog articles
+- Sell products to customers.
+- Add, remove and update products.
+- Update the website with blog articles.
 
 ### User Stories
 
@@ -65,61 +65,61 @@ To offer users original porsters for purchasing. Users will be able to browse pr
 
 New visitors to the website should be provided with the answers they need right away.
 
- - I want to view a list of products so that I can make a selection to purchase
- - I want to be able to ask questions so that I can know more about these unique posters before making a decision
- - I want to be able to easily register for an account so that I can see and save my personal details for quicker ordering in the future
- - I want to be able to read the blogs and make comments
+ - I want to view a list of products so that I can make a selection to purchase.
+ - I want to be able to ask questions so that I can know more about these unique posters before making a decision.
+ - I want to be able to easily register for an account so that I can see and save my personal details for quicker ordering in the future.
+ - I want to be able to read the blogs and make comments.
 
 #### Users (registered)
 
 Registered users of the website will be provided with additional features which non-registered users will not benefit from.
 
- - As a registered user, I want to be able to easily log in and out of my account so that I can access my personal information and order history
- - As a registered user, I want to be able to easily update my profile information so that I can update my personal details
- - As a registered user, I want to be able to view my past orders so that I can keep track of my orders with the site
- - As a registered user, I want to be able to have my delivery details prefilled so that I can save time in entering my details
+ - As a registered user, I want to be able to easily log in and out of my account so that I can access my personal information and order history.
+ - As a registered user, I want to be able to easily update my profile information so that I can update my personal details.
+ - As a registered user, I want to be able to view my past orders so that I can keep track of my orders with the site.
+ - As a registered user, I want to be able to have my delivery details prefilled so that I can save time in entering my details.
 
 #### Users (website shoppper)
 
 All shoppers of the website, new, returning or registered:
 
- - As a shopper, I want to be able to view all posters available so that I can decide which product I might like to buy
- - As a shopper, I want to be able to choose the number of products I want to order so that I can decide how many of that product I would like to order
- - As a shopper, I want to be able to add a product to my cart so that I can order my chosen product
- - As a shopper, I want to be able to delete products from my cart so that I can update the products I would like to purchase
- - As a shopper, I want to be able to update the number of products in my cart so that I can order more or less of the chosen product than I had originally intended
- - As a shopper, I want to be able to use a secure payment method so that I can be confident my details are secure
- - As a shopper, I want to be able to save my personal details from my order so that I can create an account and shop faster next time
- - As a shopper, I want to be able to check out in a simple and easy way so that I can be confident my order has gone through with all my correct details
+ - As a shopper, I want to be able to view all posters available so that I can decide which product I might like to buy.
+ - As a shopper, I want to be able to choose the number of products I want to order so that I can decide how many of that product I would like to order.
+ - As a shopper, I want to be able to add a product to my cart so that I can order my chosen product.
+ - As a shopper, I want to be able to delete products from my cart so that I can update the products I would like to purchase.
+ - As a shopper, I want to be able to update the number of products in my cart so that I can order more or less of the chosen product than I had originally intended.
+ - As a shopper, I want to be able to use a secure payment method so that I can be confident my details are secure.
+ - As a shopper, I want to be able to save my personal details from my order so that I can create an account and shop faster next time.
+ - As a shopper, I want to be able to check out in a simple and easy way so that I can be confident my order has gone through with all my correct details.
  - As a shopper, I want to be able to receive an order confirmation so that I can be sure my order has gone through.
- - As a shopper, I want to be able to learn more about movie and poster blog articles, reviews and news, so that I can decide whether I want to buy their products
- - As a shopper, I want to be able to contact the website owner so that I can ask them a question
- - As a shopper, I want to ba able to return my product
+ - As a shopper, I want to be able to learn more about movie and poster blog articles, reviews and news, so that I can decide whether I want to buy their products.
+ - As a shopper, I want to be able to contact the website owner so that I can ask them a question.
+ - As a shopper, I want to ba able to return my product.
 
 #### Users (site owner)
 
- - As the site owner, I want to be able to easily list my products to sell so that I can sell new products to my users
- - As the site owner, I want to be able to update my product listings so that I can make sure the information is correct or amendments can be made
- - As the site owner, I want to be able to easily delete product listings so that I can remove items I no longer wish to sell
- - As the site owner, I want to be able to make it as easy as possible for users to purchase my products so that I can give them a great service, sell my products
- - As the site owner, I want to be able to send auto emails to users so that I can inform them of successful registration and order confirmation
- - As the site owner, I want to be able to inform visitors of my articles, blogs so that I can keep users returning and buying new products
- - As the site owner, I want to be able to offer visitors free delivery based on a minimum amount ordered so that I can increase revenue and product sales via an incentive to the customer
- - As a shopper, I want to be able to sort the products available on the site by category so that I can view just the products in that category
+ - As the site owner, I want to be able to easily list my products to sell so that I can sell new products to my users.
+ - As the site owner, I want to be able to update my product listings so that I can make sure the information is correct or amendments can be made.
+ - As the site owner, I want to be able to easily delete product listings so that I can remove items I no longer wish to sell.
+ - As the site owner, I want to be able to make it as easy as possible for users to purchase my products so that I can give them a great service, sell my products.
+ - As the site owner, I want to be able to send auto emails to users so that I can inform them of successful registration and order confirmation.
+ - As the site owner, I want to be able to inform visitors of my articles, blogs so that I can keep users returning and buying new products.
+ - As the site owner, I want to be able to offer visitors free delivery based on a minimum amount ordered so that I can increase revenue and product sales via an incentive to the customer.
+ - As a shopper, I want to be able to sort the products available on the site by category so that I can view just the products in that category.
 
 ### Requirements
 
-- View products in a list and with detailed product information
-- Purchase the products using a secure checkout system
-- Create an account, view/update personal information and view previous orders
-- Contact the business for further information and sendback product
+- View products in a list and with detailed product information.
+- Purchase the products using a secure checkout system.
+- Create an account, view/update personal information and view previous orders.
+- Contact the business for further information and sendback product.
 - Providing blogs
 
 ### Expectations
 
-- Website is visually appealing and easy to navigate on all devices
-- User can leave a comments of the blogs
-- Personal information will be stored securely
+- Website is visually appealing and easy to navigate on all devices.
+- User can leave a comments of the blogs.
+- Personal information will be stored securely.
 
 ## Design Choices
 
@@ -158,7 +158,7 @@ The implementation ended up slightly different.
 
 In order to map the relationships between the models in this project I created an entity relationship diagram. This can be viewed [here](https://github.com/kompeet/movie-posters-ms4/blob/master/static/images/datamodels.JPG).
 
-* Profiles App
+### Profiles App
 
 #### User Profile Model
 
@@ -173,7 +173,7 @@ County|default_county|CharField|max_length=80, null=True, blank=True
 Postcode|default_postcode|CharField|max_length=20, null=True, blank=True
 Country|default_country|CountryField|blank_label='Country', null=True, blank=True
 
-* Products App
+### Products App
 
 #### Category Model
 
@@ -189,14 +189,14 @@ Name|Key in db|Field Type|Arguments
 Category|category|ForeignKey|'Category', null=True, blank=True, on_delete=models.SET_NULL
 SKU|sku|CharField|max_length=254, null=True, blank=True
 Name|name|CharField|max_length=254
-Description|description|TextField|
+Description|description|TextField|...
 Year|year|IntegerField|default=2020
 Size|has_sizes|BooleanField|default=True, null=True, blank=True
 Price|price|DecimalField|max_digits=7, decimal_places=2
 Image URL|image_url|URLField|max_length=1024, null=True, blank=True
 Image|image|ImageField|null=True, blank=True
 
-* Checkout App
+### Checkout App
 
 #### Order Model
 
@@ -229,7 +229,7 @@ Product Size|product_size|CharField|max_length=8, null=True, blank=True
 Quantity|quantity|IntegerField|null=False, blank=False, default=0
 Line Item T|lineitem_total|DecimalField|max_digits=6, decimal_places=2, null=False, blank=False, editable=False
 
-* Sendback App
+### Sendback App
 
 #### Send Back Model
 
@@ -240,7 +240,7 @@ Email|email|EmailField|blank=False
 Reason|reason|TextField|blank=False
 Order Number|order_number|CharField|max_length=80, blank=False
 
-* Blog App
+### Blog App
 
 #### Post Model
 
@@ -250,7 +250,7 @@ Title|title|CharField|max_length=200, unique=True
 Slug|slug|SlugField|max_length=200, unique=True
 Author|author|ForeignKey|User, on_delete=models.CASCADE,related_name='blog_posts'
 Updated|updated_on|DateTimeField|auto_now=True
-Content|content|TextField|
+Content|content|TextField|...
 Created|created_on|DateTimeField|auto_now_add=True
 Status|status|IntegerField|choices=STATUS, default=0
 Image URL|image_url|URLField|max_length=1024, null=True, blank=True
@@ -262,9 +262,51 @@ Name|Key in db|Field Type|Arguments
 :-----:|:-----:|:-----:|:-----:
 Post|post|ForeignKey|Post,on_delete=models.CASCADE,related_name='comments'
 Name|name|CharField|max_length=80
-Email|email|EmailField|
-Body|body|TextField|
+Email|email|EmailField|blank=False
+Body|body|TextField|blank=False
 Created|created_on|DateTimeField|auto_now_add=True
 Active|active|BooleanField|default=False
 
 ## Features
+
+### Implemented Features
+
+#### Get all Products, Sort, Filter and Search
+
+* The user can load all of the products or browse products sorting by categories. Filtering is available by Price (low to high or high to low), by Name (A-Z or Z-A) and by Category (A-Z or Z-A).
+* The product page is split using Django Pagination to provide a transparent list of products.
+
+#### Edit, Update and delete Products
+
+* The superuser can easily edit or delete a product using the adequate button on the Product Detail page.
+* They can add products on Product Management Page.In order to make it easy to upload a collection of products, when the superuser adds one product, they get redirected to the Add Product Page instead of All Product Page.
+
+#### Get in touch
+
+* The user can send an email using the Contact Form.
+
+#### Sign up, Sign in, login
+
+* The shopper can easily sign up, sign in, and reach their profile with the shipping and order information.
+* I built the authentication system using Django Allauth.
+
+#### Product returning
+
+* If the shopper is not happy with the product, they can return it. The link to this return form is a part of the footer, so the user doesn't have to sign in, or sign up (as they can place order without authentication too). The idea is that the dissatisfied shopper provides some information about the problem, they give the order number, and contact details, and the owner gets this data in Django Admin, so she can answer, and start the process.
+
+#### Blogging
+
+* The user can easily enjoy the new articles, stories of movies and posters.
+* The user can leave comments. Superuser(s) have to confirm to display.
+
+#### Back to the top
+
+* Some pages of the website can become a little long on mobile. To help users with this I have added a ‘back to top’ button on these longer pages.
+
+### Planned Features
+
+* Leave reviews beneath products: Reading reviews are a great way to help users decide to purchase a product. This feature would be great to include in the future but was not seen as imperative for launch.
+* Subscription purchase model: a subscription service would provide them with regular deliveries and a reduced cost. This would also benefit the website owner so that they have pre-orders already in place each month.
+
+## Technologies Used
+
